@@ -1,5 +1,5 @@
 def reverse(word_list):
-    file = open('path_sacheon_kimhae.txt', 'w')
+    file = open('ilsan_test_lane_4.txt', 'w')
     word_list = word_list[::-1]
     res = " ".join(word_list)
     file.write(res)
@@ -13,5 +13,5 @@ def read_file(src_file):
     return coordinate_list
 
     
-coordinate_list = read_file("path.txt")
+coordinate_list = read_file("path_ilsan_1.txt")
 reverse(coordinate_list)
