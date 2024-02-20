@@ -1,10 +1,10 @@
 def solution(s):
     answer = len(s)
 
-    for step in range(1, s//2 + 1):
+    for step in range(1, len(s)//2 + 1):
         compressed = ""
         prev = s[0:step]
-        count = 2
+        count = 1
 
         for j in range(step, len(s), step):
             if prev == s[j:j+step]:
@@ -18,3 +18,6 @@ def solution(s):
         answer = min(answer, len(compressed))
 
     return answer
+
+
+print(solution("aabbaccc"))
