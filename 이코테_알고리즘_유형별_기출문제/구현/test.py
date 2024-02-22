@@ -7,7 +7,7 @@ def calculate_destination_coordinates(start_lat, start_lon, start_alt, distance_
     # Extract destination latitude, longitude, and altitude
     dest_lat = destination_point.latitude
     dest_lon = destination_point.longitude
-    dest_alt = start_alt  # Assuming the altitude doesn't change in this example
+    dest_alt = start_alt  
 
     return dest_lat, dest_lon, dest_alt
 
